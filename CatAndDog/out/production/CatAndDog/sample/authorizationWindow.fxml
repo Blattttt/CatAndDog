@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="authorizationTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="enterButton" layoutX="585.0" layoutY="382.0" mnemonicParsing="false" text="Войти" />
+      <Label layoutX="168.0" layoutY="355.0" text="Авторизация">
+         <font>
+            <Font name="Bookman Old Style" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="402.0" text="Введите ваш ID и пароль" />
+      <ImageView fitHeight="148.0" fitWidth="569.0" layoutX="116.0" layoutY="137.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loginField" layoutX="398.0" layoutY="363.0" promptText="0000" text="1002" />
+      <PasswordField fx:id="passwordField" layoutX="398.0" layoutY="402.0" promptText="******" text="111222" />
+      <Label fx:id="exceptionField" layoutX="391.0" layoutY="446.0" text="Ошибка в введенных данных" visible="false" />
+   </children>
+</Pane>
