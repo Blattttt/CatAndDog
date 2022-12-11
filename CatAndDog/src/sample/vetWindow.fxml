@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="vetTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.VetWindow">
+   <children>
+      <Label fx:id="nameField" layoutX="63.0" layoutY="58.0" text="Здравстуйте, name! Ваш ID - id">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="182.0" fitWidth="200.0" layoutX="564.0" layoutY="33.0">
+         <image>
+            <Image url="@logo2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreField" layoutX="63.0" layoutY="97.0" text="На данный момент услуг закрепленных за вами - n.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="serviceListTable" layoutX="63.0" layoutY="148.0" prefHeight="363.0" prefWidth="475.0">
+        <columns>
+          <TableColumn fx:id="Number" prefWidth="35.0" text="№" />
+          <TableColumn fx:id="Worker" prefWidth="90.0" text="Сотрудник ID" />
+            <TableColumn fx:id="Contract" prefWidth="85.0" text="Контракт №" />
+            <TableColumn fx:id="Price" prefWidth="73.0" text="Цена руб." />
+            <TableColumn fx:id="Description" prefWidth="191.0" text="Описание" />
+        </columns>
+      </TableView>
+      <Button fx:id="refreshButton" layoutX="617.0" layoutY="242.0" mnemonicParsing="false" text="Обновить">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="newButton" layoutX="597.0" layoutY="293.0" mnemonicParsing="false" text="Создать услугу">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="628.0" layoutY="520.0" mnemonicParsing="false" text="Выйти">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeButton" layoutX="430.0" layoutY="520.0" mnemonicParsing="false" text="Удалить">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="341.0" layoutY="520.0" mnemonicParsing="false" text="Отмена" visible="false">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeButton2" layoutX="430.0" layoutY="520.0" mnemonicParsing="false" text="Удалить" visible="false">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelMessage" layoutX="329.0" layoutY="558.0" text="Вернуть строку будет невозможно" visible="false" />
+      <Button fx:id="updateButton" layoutX="171.0" layoutY="520.0" mnemonicParsing="false" text="Изменить">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelMessage1" layoutX="114.0" layoutY="558.0" text="Вы не можете изменять чужие услуги" visible="false" />
+   </children>
+</Pane>
